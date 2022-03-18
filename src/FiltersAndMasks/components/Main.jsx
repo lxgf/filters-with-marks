@@ -64,18 +64,20 @@ const Main = () => {
                     onClick={removeAllFilters}
                 >Remove all</div>
             </div>
-            {filters.length === 0 && <span className={mainStyle.info}>No data</span>}
-            {filters.map((filter, index) =>
-                <Filter
-                    key={'filter-'+index}
-                    filterIndex={index}
-                    filterData={filter}
-                    removeFilter={removeFilter}
-                    addMark={addMark}
-                    changeMark={changeMark}
-                    removeMark={removeMark}
-                />
-            )}
+            <div className={mainStyle.filtersContainer}>
+                {filters.length === 0 && <span className={mainStyle.info}>No data</span>}
+                {filters.map((filter, index) =>
+                    <Filter
+                        key={'filter-'+index}
+                        filterIndex={index}
+                        filterData={filter}
+                        removeFilter={removeFilter}
+                        addMark={addMark}
+                        changeMark={changeMark}
+                        removeMark={removeMark}
+                    />
+                )}
+            </div>
             <div
                 className={mainStyle.saveBtn}
                 onClick={saveToLs}

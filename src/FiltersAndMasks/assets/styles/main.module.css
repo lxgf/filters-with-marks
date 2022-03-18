@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    box-shadow: inset 0 0 8px oldlace;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: oldlace;
+}
 
 .main {
     font-family: 'Fredoka', sans-serif;
@@ -8,6 +20,15 @@
     align-items:  center;
     gap: 2rem;
     width: 260px;
+}
+
+.filtersContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 70vh;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .info {
