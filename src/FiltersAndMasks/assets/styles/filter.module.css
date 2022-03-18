@@ -1,0 +1,14 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    border: 1px solid #c2bbb0;
+    padding: 1rem;
+    transition: .4s ease;
+}
+
+.filter:hover {
+    border-color: oldlace;
+    box-shadow: 0 0 .5rem oldlace;
+}

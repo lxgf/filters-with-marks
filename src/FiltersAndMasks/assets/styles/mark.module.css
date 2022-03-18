@@ -1,0 +1,47 @@
+.mark {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 40%;
+    font-family: 'Fredoka', sans-serif;
+    padding: .6rem  1rem;
+    outline: none;
+    border: 1px solid oldlace;
+    background: transparent;
+    color: oldlace;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: .2s ease-out;
+}
+
+.input:hover {
+    border: 1px solid oldlace;
+    box-shadow: 0 0 .5rem oldlace;
+}
+
+.input:focus {
+    border: 1px solid wheat;
+    box-shadow: 0 0 .5rem wheat;
+}
+
+input::placeholder {
+    color: #c2bbb0;
+}
+
+.removeIcon {
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.8rem;
+    background-size: contain;
+    background: url(/src/FiltersAndMasks/assets/images/remove-icon.svg) no-repeat center;
+    opacity: 80%;
+    transition: .2s ease;
+}
+
+.removeIcon:hover {
+    opacity: 100%;
+}
